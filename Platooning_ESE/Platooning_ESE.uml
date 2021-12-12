@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ModelElements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+  <uml:Model xmi:id="_QxIfEFp0EeypbPOCXKxzLw" name="Platooning_ESE">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_Q1xHcFp0EeypbPOCXKxzLw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_Q2HFsFp0EeypbPOCXKxzLw">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_L5TvUFqGEeypbPOCXKxzLw" name="Platooning">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_zw2z4FrNEeypbPOCXKxzLw"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_uPyXoFqDEeypbPOCXKxzLw" name="Platooning Initialization" visibility="public"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_9yJAUFqFEeypbPOCXKxzLw" name="Platooning Running">
+        <packagedElement xmi:type="uml:Class" xmi:id="_5dEEkFrUEeypbPOCXKxzLw" name="Data Package"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_0S_W8FrVEeypbPOCXKxzLw" client="_5dEEkFrUEeypbPOCXKxzLw" supplier="_W03SYFqQEeypbPOCXKxzLw"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CIe1MFrYEeypbPOCXKxzLw" name="Distance value"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_ovHcYFrbEeypbPOCXKxzLw" name="" client="_CIe1MFrYEeypbPOCXKxzLw" supplier="_-pgM4FrXEeypbPOCXKxzLw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_nkfaIFrMEeypbPOCXKxzLw" name="Platooing">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_VjLMkFqGEeypbPOCXKxzLw" name="Communication"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_njy5YFqGEeypbPOCXKxzLw" name="Location"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_0vYw8FqGEeypbPOCXKxzLw" name="Distance"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_EcVK8FqHEeypbPOCXKxzLw" name="Camera"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_wzwUIFrOEeypbPOCXKxzLw" name="Initialization">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_RLyZwFp_EeypbPOCXKxzLw" name="Platoon Request"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_Y87okFqEEeypbPOCXKxzLw" name="Select"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_EtX_AFqEEeypbPOCXKxzLw" name="Alignment"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_5AivAFqEEeypbPOCXKxzLw" name="Connect"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_DUC88Fp2EeypbPOCXKxzLw" name="Synchronization"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_Wjjg8FqFEeypbPOCXKxzLw" name="Activated"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_w_IkEFrWEeypbPOCXKxzLw" name="Runnable">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_W03SYFqQEeypbPOCXKxzLw" name="Data share"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_-pgM4FrXEeypbPOCXKxzLw" name="Distance Calculate"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_6QMtgFrbEeypbPOCXKxzLw" name="GPS calculate"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_066KMFrjEeypbPOCXKxzLw" name="Camera Signal"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_rlLSQFrVEeypbPOCXKxzLw" name="Refine5" client="_W03SYFqQEeypbPOCXKxzLw" supplier="_5dEEkFrUEeypbPOCXKxzLw"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_mpyHkFrbEeypbPOCXKxzLw" name="Refine6" client="_-pgM4FrXEeypbPOCXKxzLw" supplier="_CIe1MFrYEeypbPOCXKxzLw"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_QzIqMFp0EeypbPOCXKxzLw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QzMUkFp0EeypbPOCXKxzLw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Q1qZwFp0EeypbPOCXKxzLw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q1qZwVp0EeypbPOCXKxzLw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Q1s2AFp0EeypbPOCXKxzLw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q1tdEFp0EeypbPOCXKxzLw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Q1tdEVp0EeypbPOCXKxzLw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q1tdElp0EeypbPOCXKxzLw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Q1uEIFp0EeypbPOCXKxzLw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q1uEIVp0EeypbPOCXKxzLw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Q1uEIlp0EeypbPOCXKxzLw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q1urMFp0EeypbPOCXKxzLw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Q1urMVp0EeypbPOCXKxzLw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q1urMlp0EeypbPOCXKxzLw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Q1vSQFp0EeypbPOCXKxzLw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q1vSQVp0EeypbPOCXKxzLw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Q1v5UFp0EeypbPOCXKxzLw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q1v5UVp0EeypbPOCXKxzLw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Q1wgYFp0EeypbPOCXKxzLw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q1wgYVp0EeypbPOCXKxzLw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Requirements:Requirement xmi:id="_DWFkUFp2EeypbPOCXKxzLw" base_NamedElement="_DUC88Fp2EeypbPOCXKxzLw" id="5.1" text="The Leading truck shall trigger the synchronization" base_Class="_DUC88Fp2EeypbPOCXKxzLw"/>
+  <Requirements:Requirement xmi:id="_RL3SQFp_EeypbPOCXKxzLw" base_NamedElement="_RLyZwFp_EeypbPOCXKxzLw" id="1.1" text="The following trucks shall trigger the platoon request" base_Class="_RLyZwFp_EeypbPOCXKxzLw"/>
+  <Requirements:Requirement xmi:id="_EtfTwFqEEeypbPOCXKxzLw" base_NamedElement="_EtX_AFqEEeypbPOCXKxzLw" id="3.1" text="The Leading truck driver shall align the selected following truck in a sequential order" base_Class="_EtX_AFqEEeypbPOCXKxzLw"/>
+  <Requirements:Requirement xmi:id="_Y8-r4FqEEeypbPOCXKxzLw" base_NamedElement="_Y87okFqEEeypbPOCXKxzLw" id="2.1" text="The Leading truck driver shall select the following trucks available for platooning" base_Class="_Y87okFqEEeypbPOCXKxzLw"/>
+  <Requirements:Requirement xmi:id="_5AmZYFqEEeypbPOCXKxzLw" base_NamedElement="_5AivAFqEEeypbPOCXKxzLw" id="4.1" text="The following truck status shall be changes to connected and not available for other platooning." base_Class="_5AivAFqEEeypbPOCXKxzLw"/>
+  <Requirements:Requirement xmi:id="_WjnLUFqFEeypbPOCXKxzLw" base_NamedElement="_Wjjg8FqFEeypbPOCXKxzLw" id="6.1" text="After successfull synchronization, the status of platooning in all the trucks shall be changed to &quot;Activated&quot;" base_Class="_Wjjg8FqFEeypbPOCXKxzLw"/>
+  <Requirements:Requirement xmi:id="_VjOP4FqGEeypbPOCXKxzLw" base_NamedElement="_VjLMkFqGEeypbPOCXKxzLw" id="7.1" text="The system shall use WiFi for communication between trucks" base_Class="_VjLMkFqGEeypbPOCXKxzLw"/>
+  <Requirements:Requirement xmi:id="_nj18sFqGEeypbPOCXKxzLw" base_NamedElement="_njy5YFqGEeypbPOCXKxzLw" id="8.1" text="The System shall use GPS for knowing location of the trucks" base_Class="_njy5YFqGEeypbPOCXKxzLw"/>
+  <Requirements:Requirement xmi:id="_0vb0QFqGEeypbPOCXKxzLw" base_NamedElement="_0vYw8FqGEeypbPOCXKxzLw" id="9.1" text="The System shall use Radar for calculating the distance between the trucks" base_Class="_0vYw8FqGEeypbPOCXKxzLw"/>
+  <Requirements:Requirement xmi:id="_EcZcYFqHEeypbPOCXKxzLw" base_NamedElement="_EcVK8FqHEeypbPOCXKxzLw" id="10.1" text="The System shall use the camera to coupling &amp; decoupling" base_Class="_EcVK8FqHEeypbPOCXKxzLw"/>
+  <Requirements:Requirement xmi:id="_W05HkFqQEeypbPOCXKxzLw" base_NamedElement="_W03SYFqQEeypbPOCXKxzLw" id="11.1" text="The leading truck shall share its data to the following trucks through WiFi" base_Class="_W03SYFqQEeypbPOCXKxzLw"/>
+  <Requirements:Requirement xmi:id="_nkjrkFrMEeypbPOCXKxzLw" base_NamedElement="_nkfaIFrMEeypbPOCXKxzLw" id="12.1" text="The System shall perform platooning" base_Class="_nkfaIFrMEeypbPOCXKxzLw"/>
+  <ModelElements:Problem xmi:id="_zw7FUFrNEeypbPOCXKxzLw" base_Comment="_zw2z4FrNEeypbPOCXKxzLw"/>
+  <Requirements:Requirement xmi:id="_wzywYFrOEeypbPOCXKxzLw" base_NamedElement="_wzwUIFrOEeypbPOCXKxzLw" id="13.1" text="The System shall initialize the platooning" base_Class="_wzwUIFrOEeypbPOCXKxzLw"/>
+  <Requirements:Requirement xmi:id="_5dGg0FrUEeypbPOCXKxzLw" base_NamedElement="_5dEEkFrUEeypbPOCXKxzLw" id="14.1" text="The Data package shall have Speed, Steering angle and GPS coordinated" base_Class="_5dEEkFrUEeypbPOCXKxzLw"/>
+  <Requirements:Refine xmi:id="_rlQKwFrVEeypbPOCXKxzLw" base_DirectedRelationship="_rlLSQFrVEeypbPOCXKxzLw" base_Abstraction="_rlLSQFrVEeypbPOCXKxzLw"/>
+  <Requirements:Refine xmi:id="_0TBMIFrVEeypbPOCXKxzLw" base_DirectedRelationship="_0S_W8FrVEeypbPOCXKxzLw" base_Abstraction="_0S_W8FrVEeypbPOCXKxzLw"/>
+  <Requirements:Requirement xmi:id="_w_KZQFrWEeypbPOCXKxzLw" base_NamedElement="_w_IkEFrWEeypbPOCXKxzLw" id="15.1" text="After platooning &quot;Activated&quot;, the system shall start its platooning runnable" base_Class="_w_IkEFrWEeypbPOCXKxzLw"/>
+  <Requirements:Requirement xmi:id="_-pipIFrXEeypbPOCXKxzLw" base_NamedElement="_-pgM4FrXEeypbPOCXKxzLw" id="16.1" text="The following truck shall maintain their distance gap its front truck using Radar" base_Class="_-pgM4FrXEeypbPOCXKxzLw"/>
+  <Requirements:Requirement xmi:id="_CIgqYFrYEeypbPOCXKxzLw" base_NamedElement="_CIe1MFrYEeypbPOCXKxzLw" id="17.1" text="The following truck shall maintain its distance gap of 10 meters with its front truck." base_Class="_CIe1MFrYEeypbPOCXKxzLw"/>
+  <Requirements:Refine xmi:id="_mpz8wFrbEeypbPOCXKxzLw" base_DirectedRelationship="_mpyHkFrbEeypbPOCXKxzLw" base_Abstraction="_mpyHkFrbEeypbPOCXKxzLw"/>
+  <Requirements:Refine xmi:id="_ovJRkFrbEeypbPOCXKxzLw" base_DirectedRelationship="_ovHcYFrbEeypbPOCXKxzLw" base_Abstraction="_ovHcYFrbEeypbPOCXKxzLw"/>
+  <Requirements:Requirement xmi:id="_6QPJwFrbEeypbPOCXKxzLw" base_NamedElement="_6QMtgFrbEeypbPOCXKxzLw" id="18.1" text="Every truck shall have update their GPS locations" base_Class="_6QMtgFrbEeypbPOCXKxzLw"/>
+  <Requirements:Requirement xmi:id="_06-boFrjEeypbPOCXKxzLw" base_NamedElement="_066KMFrjEeypbPOCXKxzLw" id="19.1" text="The following truck shall use camera to detect intruding vehicles" base_Class="_066KMFrjEeypbPOCXKxzLw"/>
+</xmi:XMI>
