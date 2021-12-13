@@ -16,7 +16,7 @@
   <packagedElement xmi:type="uml:Association" xmi:id="__7XbIFuMEeyQKudYFHirnA"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_WBTXgFuNEeyQKudYFHirnA" name="Actor3"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_nimrEFuNEeyQKudYFHirnA" name="UseCase3"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_yBcBcFuNEeyQKudYFHirnA" name="UseCase4"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_yBcBcFuNEeyQKudYFHirnA" name="UseCase5"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="__ono0FuNEeyQKudYFHirnA" name="UseCase4"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_MFSvcFuPEeyQKudYFHirnA" name="Actor4"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_TLPecFuPEeyQKudYFHirnA"/>
