@@ -17,17 +17,31 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="_Of7UoGHLEeyG3scemOlKMA" client="_maSG4GHJEeyG3scemOlKMA" supplier="_90GtAGHJEeyG3scemOlKMA"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_O9KqQGHLEeyG3scemOlKMA" client="_maSG4GHJEeyG3scemOlKMA" supplier="_8_pKMGHJEeyG3scemOlKMA"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_SItZMGHLEeyG3scemOlKMA" client="_WyZMAGHJEeyG3scemOlKMA" supplier="_maSG4GHJEeyG3scemOlKMA"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="_YUJnwGHLEeyG3scemOlKMA" client="_WyZMAGHJEeyG3scemOlKMA" supplier="_kesj8GHJEeyG3scemOlKMA"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_ZL5vIGHLEeyG3scemOlKMA" client="_UjzNgGHJEeyG3scemOlKMA" supplier="_WyZMAGHJEeyG3scemOlKMA"/>
     <packagedElement xmi:type="uml:Package" xmi:id="__H4-MGHLEeyG3scemOlKMA" name="General Block Definition of Platoon">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_xf9u8GHWEeyG3scemOlKMA">
+        <body>Lead Vehicle&#xD;
+</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_7lso0GHWEeyG3scemOlKMA">
+        <body>Following Vehicle&#xD;
+</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_HTGrIGHXEeyG3scemOlKMA">
+        <body>Others</body>
+      </ownedComment>
       <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_UjzNgGHJEeyG3scemOlKMA" name="Platoon"/>
       <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_WyZMAGHJEeyG3scemOlKMA" name="Vehicle"/>
       <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_maSG4GHJEeyG3scemOlKMA" name="Sensor"/>
       <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_8_pKMGHJEeyG3scemOlKMA" name="Camera"/>
-      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_kesj8GHJEeyG3scemOlKMA" name="Leader Vehicle"/>
       <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_90GtAGHJEeyG3scemOlKMA" name="LIDAR"/>
       <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_8I7koGHJEeyG3scemOlKMA" name="GPS"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_umoZEGHQEeyG3scemOlKMA" name="Actor30"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_6d7vgGHWEeyG3scemOlKMA" name="Actor29"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_FRA3kGHXEeyG3scemOlKMA" name="Actor28"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_ULIGcGHXEeyG3scemOlKMA" client="_WyZMAGHJEeyG3scemOlKMA" supplier="_FRA3kGHXEeyG3scemOlKMA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_VlcIUGHXEeyG3scemOlKMA" client="_WyZMAGHJEeyG3scemOlKMA" supplier="_umoZEGHQEeyG3scemOlKMA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_XxXNUGHXEeyG3scemOlKMA" client="_WyZMAGHJEeyG3scemOlKMA" supplier="_6d7vgGHWEeyG3scemOlKMA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_BCgwcGHPEeyG3scemOlKMA" name="GPS"/>
     <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_D-Z50GHPEeyG3scemOlKMA" name="RADAR"/>
