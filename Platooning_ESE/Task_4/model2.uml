@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks">
+  <uml:Model xmi:id="_LNV0cGHJEeyG3scemOlKMA" name="model2">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_LOx-4mHJEeyG3scemOlKMA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_LO2QUGHJEeyG3scemOlKMA">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_LPBPcGHJEeyG3scemOlKMA" name="StateMachine13">
+      <region xmi:type="uml:Region" xmi:id="_LPESwGHJEeyG3scemOlKMA" name="Region1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_LPH9IGHJEeyG3scemOlKMA" name="Activity14"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LPLngGHJEeyG3scemOlKMA" name="Block15"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LPXNsGHJEeyG3scemOlKMA" name="Block16"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_LhYf4GHLEeyG3scemOlKMA" client="_maSG4GHJEeyG3scemOlKMA" supplier="_8I7koGHJEeyG3scemOlKMA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_Of7UoGHLEeyG3scemOlKMA" client="_maSG4GHJEeyG3scemOlKMA" supplier="_90GtAGHJEeyG3scemOlKMA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_O9KqQGHLEeyG3scemOlKMA" client="_maSG4GHJEeyG3scemOlKMA" supplier="_8_pKMGHJEeyG3scemOlKMA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_SItZMGHLEeyG3scemOlKMA" client="_WyZMAGHJEeyG3scemOlKMA" supplier="_maSG4GHJEeyG3scemOlKMA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_YUJnwGHLEeyG3scemOlKMA" client="_WyZMAGHJEeyG3scemOlKMA" supplier="_kesj8GHJEeyG3scemOlKMA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_ZL5vIGHLEeyG3scemOlKMA" client="_UjzNgGHJEeyG3scemOlKMA" supplier="_WyZMAGHJEeyG3scemOlKMA"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="__H4-MGHLEeyG3scemOlKMA" name="General Block Definition of Platoon">
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_UjzNgGHJEeyG3scemOlKMA" name="Platoon"/>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_WyZMAGHJEeyG3scemOlKMA" name="Vehicle"/>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_maSG4GHJEeyG3scemOlKMA" name="Sensor"/>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_8_pKMGHJEeyG3scemOlKMA" name="Camera"/>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_kesj8GHJEeyG3scemOlKMA" name="Leader Vehicle"/>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_90GtAGHJEeyG3scemOlKMA" name="LIDAR"/>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_8I7koGHJEeyG3scemOlKMA" name="GPS"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_umoZEGHQEeyG3scemOlKMA" name="Actor30"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_BCgwcGHPEeyG3scemOlKMA" name="GPS"/>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_D-Z50GHPEeyG3scemOlKMA" name="RADAR"/>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_F32HsGHPEeyG3scemOlKMA" name="HMI"/>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_HmtdQGHPEeyG3scemOlKMA" name="Camera"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_jFTq8GHQEeyG3scemOlKMA" name="deneme"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_LNtn4GHJEeyG3scemOlKMA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LNtn4WHJEeyG3scemOlKMA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_LOwwwGHJEeyG3scemOlKMA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LOwwwWHJEeyG3scemOlKMA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_LOxX0GHJEeyG3scemOlKMA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LOxX0WHJEeyG3scemOlKMA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_LOxX0mHJEeyG3scemOlKMA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LOxX02HJEeyG3scemOlKMA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_LOxX1GHJEeyG3scemOlKMA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LOxX1WHJEeyG3scemOlKMA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_LOxX1mHJEeyG3scemOlKMA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LOxX12HJEeyG3scemOlKMA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_LOxX2GHJEeyG3scemOlKMA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LOxX2WHJEeyG3scemOlKMA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_LOxX2mHJEeyG3scemOlKMA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LOxX22HJEeyG3scemOlKMA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_LOxX3GHJEeyG3scemOlKMA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LOxX3WHJEeyG3scemOlKMA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_LOx-4GHJEeyG3scemOlKMA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LOx-4WHJEeyG3scemOlKMA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Blocks:Block xmi:id="_LPODwGHJEeyG3scemOlKMA" base_Class="_LPLngGHJEeyG3scemOlKMA"/>
+  <Blocks:Block xmi:id="_LPYb0GHJEeyG3scemOlKMA" base_Class="_LPXNsGHJEeyG3scemOlKMA"/>
+</xmi:XMI>
