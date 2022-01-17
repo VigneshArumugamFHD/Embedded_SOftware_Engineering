@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_c-DD8HcoEey0_-uU-ZBv2w" name="Platooning_UseCaseDiagram_Updated">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_c-1HEHcoEey0_-uU-ZBv2w">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_kEydIHcoEey0_-uU-ZBv2w" name="Platoon Administration">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_vOShIHcoEey0_-uU-ZBv2w" name="Truck Driver"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_E9DToHcpEey0_-uU-ZBv2w" name="Create Platoon"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_G1v6oHcpEey0_-uU-ZBv2w" name="Join Platoon"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_I7pQIHcpEey0_-uU-ZBv2w" name="Leave Platoon"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_Qa2MoHcpEey0_-uU-ZBv2w" name="Leading Truck"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_RkKlIHcpEey0_-uU-ZBv2w" name="Following Truck"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_mJwwIHcpEey0_-uU-ZBv2w" name="End Platoon"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6SOTMHcpEey0_-uU-ZBv2w" memberEnd="_6SPhUHcpEey0_-uU-ZBv2w _6SPhUXcpEey0_-uU-ZBv2w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6SO6QHcpEey0_-uU-ZBv2w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6SO6QXcpEey0_-uU-ZBv2w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6SPhUHcpEey0_-uU-ZBv2w" name="create platoon" type="_E9DToHcpEey0_-uU-ZBv2w" association="_6SOTMHcpEey0_-uU-ZBv2w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6SPhUXcpEey0_-uU-ZBv2w" name="truck driver" type="_vOShIHcoEey0_-uU-ZBv2w" association="_6SOTMHcpEey0_-uU-ZBv2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_AjOXMHcqEey0_-uU-ZBv2w" memberEnd="_AjOXM3cqEey0_-uU-ZBv2w _AjO-QHcqEey0_-uU-ZBv2w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AjOXMXcqEey0_-uU-ZBv2w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AjOXMncqEey0_-uU-ZBv2w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_AjOXM3cqEey0_-uU-ZBv2w" name="join platoon" type="_G1v6oHcpEey0_-uU-ZBv2w" association="_AjOXMHcqEey0_-uU-ZBv2w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_AjO-QHcqEey0_-uU-ZBv2w" name="truck driver" type="_vOShIHcoEey0_-uU-ZBv2w" association="_AjOXMHcqEey0_-uU-ZBv2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ColhMHcqEey0_-uU-ZBv2w" memberEnd="_ComIQncqEey0_-uU-ZBv2w _ComIQ3cqEey0_-uU-ZBv2w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ComIQHcqEey0_-uU-ZBv2w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ComIQXcqEey0_-uU-ZBv2w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ComIQncqEey0_-uU-ZBv2w" name="join platoon" type="_G1v6oHcpEey0_-uU-ZBv2w" association="_ColhMHcqEey0_-uU-ZBv2w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ComIQ3cqEey0_-uU-ZBv2w" name="following truck" type="_RkKlIHcpEey0_-uU-ZBv2w" association="_ColhMHcqEey0_-uU-ZBv2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_E6TsMHcqEey0_-uU-ZBv2w" memberEnd="_E6UTQncqEey0_-uU-ZBv2w _E6UTQ3cqEey0_-uU-ZBv2w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_E6UTQHcqEey0_-uU-ZBv2w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_E6UTQXcqEey0_-uU-ZBv2w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_E6UTQncqEey0_-uU-ZBv2w" name="leave platoon" type="_I7pQIHcpEey0_-uU-ZBv2w" association="_E6TsMHcqEey0_-uU-ZBv2w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_E6UTQ3cqEey0_-uU-ZBv2w" name="truck driver" type="_vOShIHcoEey0_-uU-ZBv2w" association="_E6TsMHcqEey0_-uU-ZBv2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JPBpsHcqEey0_-uU-ZBv2w" memberEnd="_JPBps3cqEey0_-uU-ZBv2w _JPBptHcqEey0_-uU-ZBv2w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JPBpsXcqEey0_-uU-ZBv2w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JPBpsncqEey0_-uU-ZBv2w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JPBps3cqEey0_-uU-ZBv2w" name="end platoon" type="_mJwwIHcpEey0_-uU-ZBv2w" association="_JPBpsHcqEey0_-uU-ZBv2w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JPBptHcqEey0_-uU-ZBv2w" name="leading truck" type="_Qa2MoHcpEey0_-uU-ZBv2w" association="_JPBpsHcqEey0_-uU-ZBv2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LV7EwHcqEey0_-uU-ZBv2w" memberEnd="_LV7Ew3cqEey0_-uU-ZBv2w _LV7ExHcqEey0_-uU-ZBv2w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LV7EwXcqEey0_-uU-ZBv2w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LV7EwncqEey0_-uU-ZBv2w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_LV7Ew3cqEey0_-uU-ZBv2w" name="create platoon" type="_E9DToHcpEey0_-uU-ZBv2w" association="_LV7EwHcqEey0_-uU-ZBv2w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_LV7ExHcqEey0_-uU-ZBv2w" name="leading truck" type="_Qa2MoHcpEey0_-uU-ZBv2w" association="_LV7EwHcqEey0_-uU-ZBv2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NHg-MHcqEey0_-uU-ZBv2w" memberEnd="_NHhlQXcqEey0_-uU-ZBv2w _NHhlQncqEey0_-uU-ZBv2w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NHg-MXcqEey0_-uU-ZBv2w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NHhlQHcqEey0_-uU-ZBv2w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NHhlQXcqEey0_-uU-ZBv2w" name="leave platoon" type="_I7pQIHcpEey0_-uU-ZBv2w" association="_NHg-MHcqEey0_-uU-ZBv2w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NHhlQncqEey0_-uU-ZBv2w" name="following truck" type="_RkKlIHcpEey0_-uU-ZBv2w" association="_NHg-MHcqEey0_-uU-ZBv2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_VbNSsHcqEey0_-uU-ZBv2w" memberEnd="_VbNSs3cqEey0_-uU-ZBv2w _VbNStHcqEey0_-uU-ZBv2w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VbNSsXcqEey0_-uU-ZBv2w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VbNSsncqEey0_-uU-ZBv2w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VbNSs3cqEey0_-uU-ZBv2w" name="leave platoon" type="_I7pQIHcpEey0_-uU-ZBv2w" association="_VbNSsHcqEey0_-uU-ZBv2w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VbNStHcqEey0_-uU-ZBv2w" name="leading truck" type="_Qa2MoHcpEey0_-uU-ZBv2w" association="_VbNSsHcqEey0_-uU-ZBv2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Xy4UsHcqEey0_-uU-ZBv2w" memberEnd="_Xy4Us3cqEey0_-uU-ZBv2w _Xy4UtHcqEey0_-uU-ZBv2w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Xy4UsXcqEey0_-uU-ZBv2w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Xy4UsncqEey0_-uU-ZBv2w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Xy4Us3cqEey0_-uU-ZBv2w" name="end platoon" type="_mJwwIHcpEey0_-uU-ZBv2w" association="_Xy4UsHcqEey0_-uU-ZBv2w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Xy4UtHcqEey0_-uU-ZBv2w" name="truck driver" type="_vOShIHcoEey0_-uU-ZBv2w" association="_Xy4UsHcqEey0_-uU-ZBv2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_uJ1IkHcqEey0_-uU-ZBv2w" name="Joining to The Platoon">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_7iw4kHcqEey0_-uU-ZBv2w" name="Truck Ready to Join Platoon"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_GHL5kHcrEey0_-uU-ZBv2w" name="Trucks in Platoon"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_J200EHcrEey0_-uU-ZBv2w" name="Send request to join platoon"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_PMw-AHcrEey0_-uU-ZBv2w" name="Share your GPS signal"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_R1TGgHcrEey0_-uU-ZBv2w" name="Join wireless network of platoon"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ItF58HctEey0_-uU-ZBv2w" name="Accept the request and add to platoon"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_50z3EHcsEey0_-uU-ZBv2w" memberEnd="_50z3E3csEey0_-uU-ZBv2w _50z3FHcsEey0_-uU-ZBv2w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_50z3EXcsEey0_-uU-ZBv2w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_50z3EncsEey0_-uU-ZBv2w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_50z3E3csEey0_-uU-ZBv2w" name="send request to join platoon" type="_J200EHcrEey0_-uU-ZBv2w" association="_50z3EHcsEey0_-uU-ZBv2w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_50z3FHcsEey0_-uU-ZBv2w" name="truck ready to join platoon" type="_7iw4kHcqEey0_-uU-ZBv2w" association="_50z3EHcsEey0_-uU-ZBv2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6vpHoHcsEey0_-uU-ZBv2w" memberEnd="_6vpHo3csEey0_-uU-ZBv2w _6vpHpHcsEey0_-uU-ZBv2w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6vpHoXcsEey0_-uU-ZBv2w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6vpHoncsEey0_-uU-ZBv2w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6vpHo3csEey0_-uU-ZBv2w" name="share your gps signal" type="_PMw-AHcrEey0_-uU-ZBv2w" association="_6vpHoHcsEey0_-uU-ZBv2w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6vpHpHcsEey0_-uU-ZBv2w" name="truck ready to join platoon" type="_7iw4kHcqEey0_-uU-ZBv2w" association="_6vpHoHcsEey0_-uU-ZBv2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7rrSEHcsEey0_-uU-ZBv2w" memberEnd="_7rrSE3csEey0_-uU-ZBv2w _7rrSFHcsEey0_-uU-ZBv2w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7rrSEXcsEey0_-uU-ZBv2w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7rrSEncsEey0_-uU-ZBv2w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7rrSE3csEey0_-uU-ZBv2w" name="join wireless network of platoon" type="_R1TGgHcrEey0_-uU-ZBv2w" association="_7rrSEHcsEey0_-uU-ZBv2w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7rrSFHcsEey0_-uU-ZBv2w" name="truck ready to join platoon" type="_7iw4kHcqEey0_-uU-ZBv2w" association="_7rrSEHcsEey0_-uU-ZBv2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-G7MgHcsEey0_-uU-ZBv2w" memberEnd="_-G7zkncsEey0_-uU-ZBv2w _-G7zk3csEey0_-uU-ZBv2w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-G7zkHcsEey0_-uU-ZBv2w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-G7zkXcsEey0_-uU-ZBv2w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-G7zkncsEey0_-uU-ZBv2w" name="share your gps signal" type="_PMw-AHcrEey0_-uU-ZBv2w" association="_-G7MgHcsEey0_-uU-ZBv2w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-G7zk3csEey0_-uU-ZBv2w" name="trucks in platoon" type="_GHL5kHcrEey0_-uU-ZBv2w" association="_-G7MgHcsEey0_-uU-ZBv2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_O4noEHctEey0_-uU-ZBv2w" memberEnd="_O4noE3ctEey0_-uU-ZBv2w _O4noFHctEey0_-uU-ZBv2w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_O4noEXctEey0_-uU-ZBv2w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O4noEnctEey0_-uU-ZBv2w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_O4noE3ctEey0_-uU-ZBv2w" name="accept the request and add to platoon" type="_ItF58HctEey0_-uU-ZBv2w" association="_O4noEHctEey0_-uU-ZBv2w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_O4noFHctEey0_-uU-ZBv2w" name="trucks in platoon" type="_GHL5kHcrEey0_-uU-ZBv2w" association="_O4noEHctEey0_-uU-ZBv2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_U0xdcHctEey0_-uU-ZBv2w" name="Package18"/>
+</uml:Model>
