@@ -120,7 +120,6 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_U0xdcHctEey0_-uU-ZBv2w" name="uc[package]UseCase[Data Sharing in Platoon]">
     <packagedElement xmi:type="uml:Actor" xmi:id="_5Fb-EHd4Eeym9ZFV2IFcCg" name="Truck in Platoon"/>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_6vUtAHd4Eeym9ZFV2IFcCg" name="Other Trucks in Platoon"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_9jdBgHd4Eeym9ZFV2IFcCg" name="Share Front/Rear Trajectory Angle Signal"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_GXV5AHd5Eeym9ZFV2IFcCg" name="Share relative distance (longitudinal/lateral)"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_KJbDgHd5Eeym9ZFV2IFcCg" name="Share velocity"/>
@@ -132,7 +131,7 @@
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_g9ClQHd5Eeym9ZFV2IFcCg" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_g9ClQXd5Eeym9ZFV2IFcCg" name="share front/rear trajectory angle signal" type="_9jdBgHd4Eeym9ZFV2IFcCg" association="_g9BXIHd5Eeym9ZFV2IFcCg"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_g9ClQnd5Eeym9ZFV2IFcCg" name="truck in platoon" type="_hkYSEHd5Eeym9ZFV2IFcCg" association="_g9BXIHd5Eeym9ZFV2IFcCg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_g9ClQnd5Eeym9ZFV2IFcCg" name="truck in platoon" type="_5Fb-EHd4Eeym9ZFV2IFcCg" association="_g9BXIHd5Eeym9ZFV2IFcCg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_hkYSEHd5Eeym9ZFV2IFcCg" memberEnd="_hkYSE3d5Eeym9ZFV2IFcCg _hkY5IHd5Eeym9ZFV2IFcCg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hkYSEXd5Eeym9ZFV2IFcCg" source="org.eclipse.papyrus">
@@ -161,41 +160,6 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_mtb2k3d5Eeym9ZFV2IFcCg" name="share steering angle / kingpin angle" type="_a9F1AHd5Eeym9ZFV2IFcCg" association="_mtb2kHd5Eeym9ZFV2IFcCg"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_mtcdoHd5Eeym9ZFV2IFcCg" name="truck in platoon" type="_5Fb-EHd4Eeym9ZFV2IFcCg" association="_mtb2kHd5Eeym9ZFV2IFcCg"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_pduz8Hd5Eeym9ZFV2IFcCg" memberEnd="_pdvbAnd5Eeym9ZFV2IFcCg _pdvbA3d5Eeym9ZFV2IFcCg">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pdvbAHd5Eeym9ZFV2IFcCg" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pdvbAXd5Eeym9ZFV2IFcCg" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_pdvbAnd5Eeym9ZFV2IFcCg" name="other trucks in platoon" type="_6vUtAHd4Eeym9ZFV2IFcCg" association="_pduz8Hd5Eeym9ZFV2IFcCg"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_pdvbA3d5Eeym9ZFV2IFcCg" name="share front/rear trajectory angle signal" type="_9jdBgHd4Eeym9ZFV2IFcCg" association="_pduz8Hd5Eeym9ZFV2IFcCg"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_qi3QAHd5Eeym9ZFV2IFcCg" memberEnd="_qi33EXd5Eeym9ZFV2IFcCg _qi33End5Eeym9ZFV2IFcCg">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qi3QAXd5Eeym9ZFV2IFcCg" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qi33EHd5Eeym9ZFV2IFcCg" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_qi33EXd5Eeym9ZFV2IFcCg" name="other trucks in platoon" type="_6vUtAHd4Eeym9ZFV2IFcCg" association="_qi3QAHd5Eeym9ZFV2IFcCg"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_qi33End5Eeym9ZFV2IFcCg" name="share relative distance (longitudinal/lateral)" type="_GXV5AHd5Eeym9ZFV2IFcCg" association="_qi3QAHd5Eeym9ZFV2IFcCg"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_s0D2kHd5Eeym9ZFV2IFcCg" memberEnd="_s0EdoHd5Eeym9ZFV2IFcCg _s0EdoXd5Eeym9ZFV2IFcCg">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_s0D2kXd5Eeym9ZFV2IFcCg" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_s0D2knd5Eeym9ZFV2IFcCg" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_s0EdoHd5Eeym9ZFV2IFcCg" name="share velocity" type="_KJbDgHd5Eeym9ZFV2IFcCg" association="_s0D2kHd5Eeym9ZFV2IFcCg"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_s0EdoXd5Eeym9ZFV2IFcCg" name="other trucks in platoon" type="_6vUtAHd4Eeym9ZFV2IFcCg" association="_s0D2kHd5Eeym9ZFV2IFcCg"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_wOGUgHd5Eeym9ZFV2IFcCg" memberEnd="_wOG7kXd5Eeym9ZFV2IFcCg _wOG7knd5Eeym9ZFV2IFcCg">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wOGUgXd5Eeym9ZFV2IFcCg" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wOG7kHd5Eeym9ZFV2IFcCg" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_wOG7kXd5Eeym9ZFV2IFcCg" name="share gps coordinates" type="_RpSuYHd5Eeym9ZFV2IFcCg" association="_wOGUgHd5Eeym9ZFV2IFcCg"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_wOG7knd5Eeym9ZFV2IFcCg" name="other trucks in platoon" type="_6vUtAHd4Eeym9ZFV2IFcCg" association="_wOGUgHd5Eeym9ZFV2IFcCg"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_xDH4AHd5Eeym9ZFV2IFcCg" memberEnd="_xDH4A3d5Eeym9ZFV2IFcCg _xDH4BHd5Eeym9ZFV2IFcCg">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xDH4AXd5Eeym9ZFV2IFcCg" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xDH4And5Eeym9ZFV2IFcCg" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_xDH4A3d5Eeym9ZFV2IFcCg" name="share steering angle / kingpin angle" type="_a9F1AHd5Eeym9ZFV2IFcCg" association="_xDH4AHd5Eeym9ZFV2IFcCg"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_xDH4BHd5Eeym9ZFV2IFcCg" name="other trucks in platoon" type="_6vUtAHd4Eeym9ZFV2IFcCg" association="_xDH4AHd5Eeym9ZFV2IFcCg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_IyCkYHd6Eeym9ZFV2IFcCg" name="uc[package]UseCase[Collection Data from Sensors]">
     <packagedElement xmi:type="uml:Actor" xmi:id="_kpGK0Hd6Eeym9ZFV2IFcCg" name="Truck in Platoon"/>
