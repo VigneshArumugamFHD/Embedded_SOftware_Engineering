@@ -108,7 +108,7 @@
   <Requirements:Requirement xmi:id="_WjnLUFqFEeypbPOCXKxzLw" base_NamedElement="_Wjjg8FqFEeypbPOCXKxzLw" id="12.1" text="After successfull synchronization, the status of platooning in all the trucks shall be changed to &quot;Activated&quot;" base_Class="_Wjjg8FqFEeypbPOCXKxzLw"/>
   <Requirements:Requirement xmi:id="_VjOP4FqGEeypbPOCXKxzLw" base_NamedElement="_VjLMkFqGEeypbPOCXKxzLw" id="2.1" text="The system shall use WiFi for communication between trucks" base_Class="_VjLMkFqGEeypbPOCXKxzLw"/>
   <Requirements:Requirement xmi:id="_nj18sFqGEeypbPOCXKxzLw" base_NamedElement="_njy5YFqGEeypbPOCXKxzLw" id="3.1" text="The System shall use GPS for knowing location of the trucks" base_Class="_njy5YFqGEeypbPOCXKxzLw"/>
-  <Requirements:Requirement xmi:id="_0vb0QFqGEeypbPOCXKxzLw" base_NamedElement="_0vYw8FqGEeypbPOCXKxzLw" id="4.1" text="The System shall use LiDAR for calculating the distance between the trucks" base_Class="_0vYw8FqGEeypbPOCXKxzLw"/>
+  <Requirements:Requirement xmi:id="_0vb0QFqGEeypbPOCXKxzLw" base_NamedElement="_0vYw8FqGEeypbPOCXKxzLw" id="4.2" text="The System shall use LiDAR for calculating the distance between the trucks" base_Class="_0vYw8FqGEeypbPOCXKxzLw"/>
   <Requirements:Requirement xmi:id="_EcZcYFqHEeypbPOCXKxzLw" base_NamedElement="_EcVK8FqHEeypbPOCXKxzLw" id="5.1" text="The System shall use the camera to coupling &amp; decoupling" base_Class="_EcVK8FqHEeypbPOCXKxzLw"/>
   <Requirements:Requirement xmi:id="_W05HkFqQEeypbPOCXKxzLw" base_NamedElement="_W03SYFqQEeypbPOCXKxzLw" id="14.1" text="The leading truck shall share its data to the following trucks through WiFi" base_Class="_W03SYFqQEeypbPOCXKxzLw"/>
   <Requirements:Requirement xmi:id="_nkjrkFrMEeypbPOCXKxzLw" base_NamedElement="_nkfaIFrMEeypbPOCXKxzLw" id="1.1" text="The System shall perform platooning" base_Class="_nkfaIFrMEeypbPOCXKxzLw"/>
@@ -118,7 +118,7 @@
   <Requirements:Refine xmi:id="_rlQKwFrVEeypbPOCXKxzLw" base_DirectedRelationship="_rlLSQFrVEeypbPOCXKxzLw" base_Abstraction="_rlLSQFrVEeypbPOCXKxzLw"/>
   <Requirements:Refine xmi:id="_0TBMIFrVEeypbPOCXKxzLw" base_DirectedRelationship="_0S_W8FrVEeypbPOCXKxzLw" base_Abstraction="_0S_W8FrVEeypbPOCXKxzLw"/>
   <Requirements:Requirement xmi:id="_w_KZQFrWEeypbPOCXKxzLw" base_NamedElement="_w_IkEFrWEeypbPOCXKxzLw" id="13.1" text="After platooning &quot;Activated&quot;, the system shall start its platooning runnable" base_Class="_w_IkEFrWEeypbPOCXKxzLw"/>
-  <Requirements:Requirement xmi:id="_-pipIFrXEeypbPOCXKxzLw" base_NamedElement="_-pgM4FrXEeypbPOCXKxzLw" id="16.1" text="The following truck shall maintain their distance gap its front truck using LiDAR" base_Class="_-pgM4FrXEeypbPOCXKxzLw"/>
+  <Requirements:Requirement xmi:id="_-pipIFrXEeypbPOCXKxzLw" base_NamedElement="_-pgM4FrXEeypbPOCXKxzLw" id="16.2" text="The following truck shall maintain their distance gap its front truck using LiDAR" base_Class="_-pgM4FrXEeypbPOCXKxzLw"/>
   <Requirements:Requirement xmi:id="_CIgqYFrYEeypbPOCXKxzLw" base_NamedElement="_CIe1MFrYEeypbPOCXKxzLw" id="17.1" text="The following truck shall maintain its distance gap of 10 meters with its front truck." base_Class="_CIe1MFrYEeypbPOCXKxzLw"/>
   <Requirements:Refine xmi:id="_mpz8wFrbEeypbPOCXKxzLw" base_DirectedRelationship="_mpyHkFrbEeypbPOCXKxzLw" base_Abstraction="_mpyHkFrbEeypbPOCXKxzLw"/>
   <Requirements:Refine xmi:id="_ovJRkFrbEeypbPOCXKxzLw" base_DirectedRelationship="_ovHcYFrbEeypbPOCXKxzLw" base_Abstraction="_ovHcYFrbEeypbPOCXKxzLw"/>
