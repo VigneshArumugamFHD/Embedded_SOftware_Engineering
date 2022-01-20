@@ -131,7 +131,7 @@
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_g9ClQHd5Eeym9ZFV2IFcCg" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_g9ClQXd5Eeym9ZFV2IFcCg" name="share front/rear trajectory angle signal" type="_9jdBgHd4Eeym9ZFV2IFcCg" association="_g9BXIHd5Eeym9ZFV2IFcCg"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_g9ClQnd5Eeym9ZFV2IFcCg" name="truck in platoon" type="_5Fb-EHd4Eeym9ZFV2IFcCg" association="_g9BXIHd5Eeym9ZFV2IFcCg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_g9ClQnd5Eeym9ZFV2IFcCg" name="truck in platoon" type="_hkYSEHd5Eeym9ZFV2IFcCg" association="_g9BXIHd5Eeym9ZFV2IFcCg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_hkYSEHd5Eeym9ZFV2IFcCg" memberEnd="_hkYSE3d5Eeym9ZFV2IFcCg _hkY5IHd5Eeym9ZFV2IFcCg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hkYSEXd5Eeym9ZFV2IFcCg" source="org.eclipse.papyrus">
@@ -167,8 +167,9 @@
     <packagedElement xmi:type="uml:Actor" xmi:id="_sBXY4Hd6Eeym9ZFV2IFcCg" name="Camera"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_s2itYHd6Eeym9ZFV2IFcCg" name="LIDAR"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_v_pzYHd6Eeym9ZFV2IFcCg" name="Generate route plan"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_zX8k4Hd6Eeym9ZFV2IFcCg" name="Recognize environment(Traffic Lights, Pedestrians)"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zX8k4Hd6Eeym9ZFV2IFcCg" name="Recognize environment(Intruding Cars, Traffic Lights, Pedestrians)"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_48J0UHd6Eeym9ZFV2IFcCg" name="Continuously calculate distance (Detect collission)"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_XSmXEHooEeyOdaRSTxh6Bw" name="Coupling&amp;Decoupling"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_BXfo8Hd7Eeym9ZFV2IFcCg" memberEnd="_BXfo83d7Eeym9ZFV2IFcCg _BXfo9Hd7Eeym9ZFV2IFcCg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BXfo8Xd7Eeym9ZFV2IFcCg" source="org.eclipse.papyrus">
@@ -211,5 +212,26 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_KuktEHd7Eeym9ZFV2IFcCg" name="continuously calculate distance (detect collission)" type="_48J0UHd6Eeym9ZFV2IFcCg" association="_KukGAHd7Eeym9ZFV2IFcCg"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_KuktEXd7Eeym9ZFV2IFcCg" name="lıdar" type="_s2itYHd6Eeym9ZFV2IFcCg" association="_KukGAHd7Eeym9ZFV2IFcCg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dafs8HopEeyOdaRSTxh6Bw" memberEnd="_dagUAXopEeyOdaRSTxh6Bw _dagUAnopEeyOdaRSTxh6Bw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dafs8XopEeyOdaRSTxh6Bw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dagUAHopEeyOdaRSTxh6Bw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dagUAXopEeyOdaRSTxh6Bw" name="coupling&amp;decoupling" type="_XSmXEHooEeyOdaRSTxh6Bw" association="_dafs8HopEeyOdaRSTxh6Bw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dagUAnopEeyOdaRSTxh6Bw" name="truck in platoon" type="_kpGK0Hd6Eeym9ZFV2IFcCg" association="_dafs8HopEeyOdaRSTxh6Bw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_f93BkHopEeyOdaRSTxh6Bw" memberEnd="_f93Bk3opEeyOdaRSTxh6Bw _f93BlHopEeyOdaRSTxh6Bw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f93BkXopEeyOdaRSTxh6Bw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_f93BknopEeyOdaRSTxh6Bw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_f93Bk3opEeyOdaRSTxh6Bw" name="camera" type="_sBXY4Hd6Eeym9ZFV2IFcCg" association="_f93BkHopEeyOdaRSTxh6Bw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_f93BlHopEeyOdaRSTxh6Bw" name="coupling&amp;decoupling" type="_XSmXEHooEeyOdaRSTxh6Bw" association="_f93BkHopEeyOdaRSTxh6Bw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_B5Yr4HoqEeyOdaRSTxh6Bw" memberEnd="_B5Z6AnoqEeyOdaRSTxh6Bw _B5Z6A3oqEeyOdaRSTxh6Bw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B5Z6AHoqEeyOdaRSTxh6Bw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_B5Z6AXoqEeyOdaRSTxh6Bw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_B5Z6AnoqEeyOdaRSTxh6Bw" name="coupling&amp;decoupling" type="_XSmXEHooEeyOdaRSTxh6Bw" association="_B5Yr4HoqEeyOdaRSTxh6Bw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_B5Z6A3oqEeyOdaRSTxh6Bw" name="lıdar" type="_s2itYHd6Eeym9ZFV2IFcCg" association="_B5Yr4HoqEeyOdaRSTxh6Bw"/>
   </packagedElement>
 </uml:Model>
