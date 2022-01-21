@@ -72,13 +72,13 @@
     <element xmi:type="uml:Class" href="InternalBlockDiagram_Platoon.uml#_1oZdgHr8EeyXjcG-sxsp9A"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1o7pAXr8EeyXjcG-sxsp9A" x="40" y="40" width="1041" height="541"/>
   </children>
-  <children xmi:type="notation:Shape" xmi:id="_uSNg1XsBEeyXjcG-sxsp9A" type="StereotypeComment">
-    <styles xmi:type="notation:TitleStyle" xmi:id="_uSNg1nsBEeyXjcG-sxsp9A"/>
-    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_uSNg2HsBEeyXjcG-sxsp9A" name="BASE_ELEMENT">
+  <children xmi:type="notation:Shape" xmi:id="_wTwnM3sUEeycXe8s8hFKKg" type="StereotypeComment">
+    <styles xmi:type="notation:TitleStyle" xmi:id="_wTwnNHsUEeycXe8s8hFKKg"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_wTwnNnsUEeycXe8s8hFKKg" name="BASE_ELEMENT">
       <eObjectValue xmi:type="uml:Class" href="InternalBlockDiagram_Platoon.uml#_1oZdgHr8EeyXjcG-sxsp9A"/>
     </styles>
     <element xsi:nil="true"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uSNg13sBEeyXjcG-sxsp9A" x="240" y="40"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wTwnNXsUEeycXe8s8hFKKg" x="240" y="40"/>
   </children>
   <styles xmi:type="notation:StringValueStyle" xmi:id="_1o07UXr8EeyXjcG-sxsp9A" name="diagram_compatibility_version" stringValue="1.4.0"/>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_1o07Unr8EeyXjcG-sxsp9A"/>
@@ -208,14 +208,14 @@
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DCoGoHsAEeyXjcG-sxsp9A" id="(0.0,0.24691358024691357)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DCoGoXsAEeyXjcG-sxsp9A" id="(1.0,0.24691358024691357)"/>
   </edges>
-  <edges xmi:type="notation:Connector" xmi:id="_uSOH4HsBEeyXjcG-sxsp9A" type="StereotypeCommentLink" source="_1o7pAHr8EeyXjcG-sxsp9A" target="_uSNg1XsBEeyXjcG-sxsp9A">
-    <styles xmi:type="notation:FontStyle" xmi:id="_uSOH4XsBEeyXjcG-sxsp9A"/>
-    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_uSOH5XsBEeyXjcG-sxsp9A" name="BASE_ELEMENT">
+  <edges xmi:type="notation:Connector" xmi:id="_wTwnN3sUEeycXe8s8hFKKg" type="StereotypeCommentLink" source="_1o7pAHr8EeyXjcG-sxsp9A" target="_wTwnM3sUEeycXe8s8hFKKg">
+    <styles xmi:type="notation:FontStyle" xmi:id="_wTwnOHsUEeycXe8s8hFKKg"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_wTxOQHsUEeycXe8s8hFKKg" name="BASE_ELEMENT">
       <eObjectValue xmi:type="uml:Class" href="InternalBlockDiagram_Platoon.uml#_1oZdgHr8EeyXjcG-sxsp9A"/>
     </styles>
     <element xsi:nil="true"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_uSOH4nsBEeyXjcG-sxsp9A" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_uSOH43sBEeyXjcG-sxsp9A"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_uSOH5HsBEeyXjcG-sxsp9A"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wTwnOXsUEeycXe8s8hFKKg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wTwnOnsUEeycXe8s8hFKKg"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wTwnO3sUEeycXe8s8hFKKg"/>
   </edges>
 </notation:Diagram>
