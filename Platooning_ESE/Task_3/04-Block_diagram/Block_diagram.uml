@@ -14,37 +14,37 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_LPLngGHJEeyG3scemOlKMA" name="Block15"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_LPXNsGHJEeyG3scemOlKMA" name="Block16"/>
     <packagedElement xmi:type="uml:Package" xmi:id="__H4-MGHLEeyG3scemOlKMA" name="bdd Platooning">
-      <packagedElement xmi:type="uml:Class" xmi:id="_NgyqgGHZEeyJgbvA4oKTXQ" name="Camera">
+      <packagedElement xmi:type="uml:Class" xmi:id="_NgyqgGHZEeyJgbvA4oKTXQ" name="Camera_Management">
         <ownedRule xmi:type="uml:Constraint" xmi:id="_2mOyQGHjEeyJgbvA4oKTXQ" name="Coverage">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_2mQAYGHjEeyJgbvA4oKTXQ" name="constraintSpec">
             <language>Natural language</language>
             <body>The coverage of camera shall be only with platooning path</body>
           </specification>
         </ownedRule>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_76Q5oHr7Eey3qa1cyTvsgA" name="intruderDetected">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_76Q5oXr7Eey3qa1cyTvsgA" name="intruderDetected"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_8qhR4Hr7Eey3qa1cyTvsgA" name="captureIntruder"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_thTZoGHZEeyJgbvA4oKTXQ" name="sensor">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_ERDdIWHcEeyJgbvA4oKTXQ" name="gps" type="_xMq4IGHZEeyJgbvA4oKTXQ" aggregation="composite" association="_ERCPAGHcEeyJgbvA4oKTXQ">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EREEMGHcEeyJgbvA4oKTXQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EREEMWHcEeyJgbvA4oKTXQ" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_FNgeUmHcEeyJgbvA4oKTXQ" name="lidar" type="_wa0kcGHZEeyJgbvA4oKTXQ" aggregation="composite" association="_FNf3QGHcEeyJgbvA4oKTXQ">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FNgeU2HcEeyJgbvA4oKTXQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FNhFYGHcEeyJgbvA4oKTXQ" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_G0d1EmHcEeyJgbvA4oKTXQ" name="camera" type="_NgyqgGHZEeyJgbvA4oKTXQ" aggregation="composite" association="_G0cm8GHcEeyJgbvA4oKTXQ">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G0ecIGHcEeyJgbvA4oKTXQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G0ecIWHcEeyJgbvA4oKTXQ" value="1"/>
-        </ownedAttribute>
+      <packagedElement xmi:type="uml:Class" xmi:id="_thTZoGHZEeyJgbvA4oKTXQ" name="Sensor">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ERDdIWHcEeyJgbvA4oKTXQ" name="gps" type="_xMq4IGHZEeyJgbvA4oKTXQ" aggregation="composite" association="_ERCPAGHcEeyJgbvA4oKTXQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FNgeUmHcEeyJgbvA4oKTXQ" name="lidar" type="_wa0kcGHZEeyJgbvA4oKTXQ" aggregation="composite" association="_FNf3QGHcEeyJgbvA4oKTXQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_G0d1EmHcEeyJgbvA4oKTXQ" name="camera" type="_NgyqgGHZEeyJgbvA4oKTXQ" aggregation="composite" association="_G0cm8GHcEeyJgbvA4oKTXQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_wa0kcGHZEeyJgbvA4oKTXQ" name="Lidar">
+      <packagedElement xmi:type="uml:Class" xmi:id="_wa0kcGHZEeyJgbvA4oKTXQ" name="LiDAR_Management">
         <ownedRule xmi:type="uml:Constraint" xmi:id="_6gLD0GHZEeyJgbvA4oKTXQ" name="Output_values" visibility="public">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_6gLq4GHZEeyJgbvA4oKTXQ" name="distance value">
             <language>Natural language</language>
             <body>Distance value shall always be positive</body>
           </specification>
         </ownedRule>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_KDjvkHr8Eey3qa1cyTvsgA" name="DistanceGap">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_PIBH8Hr8Eey3qa1cyTvsgA" name="updateGap"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_xMq4IGHZEeyJgbvA4oKTXQ" name="GPS">
+      <packagedElement xmi:type="uml:Class" xmi:id="_xMq4IGHZEeyJgbvA4oKTXQ" name="GPS_Management">
         <ownedRule xmi:type="uml:Constraint" xmi:id="_LHblcGHkEeyJgbvA4oKTXQ" name="update">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_LHcMgGHkEeyJgbvA4oKTXQ" name="constraintSpec">
             <language>Natural language</language>
@@ -54,16 +54,28 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_LyZqgGHjEeyJgbvA4oKTXQ" name="coordinates">
           <type xmi:type="uml:DataType" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_String"/>
         </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wZpWIHr7Eey3qa1cyTvsgA" name="coordinates">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_TCAEwGHjEeyJgbvA4oKTXQ" name="GetGPS"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_sbznkHr7Eey3qa1cyTvsgA" name="updateCoordinates"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="__LzsgGHZEeyJgbvA4oKTXQ" name="Vehicle">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_Rqaq8mHcEeyJgbvA4oKTXQ" name="lead truck" type="_a7qewGHaEeyJgbvA4oKTXQ" aggregation="composite" association="_RqZc0GHcEeyJgbvA4oKTXQ"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_SQYewGHcEeyJgbvA4oKTXQ" name="following truck" type="_KtwFsGHaEeyJgbvA4oKTXQ" aggregation="composite" association="_SQX3sGHcEeyJgbvA4oKTXQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SQYewmHcEeyJgbvA4oKTXQ" value="*"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_VUZpYmHcEeyJgbvA4oKTXQ" name="other vehicle" type="_b_pEQGHaEeyJgbvA4oKTXQ" aggregation="shared" association="_VUZCUGHcEeyJgbvA4oKTXQ">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wmTiEGHhEeyJgbvA4oKTXQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VUaQcWHcEeyJgbvA4oKTXQ" value="*"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_gMs4UHr5Eey3qa1cyTvsgA" name="RearTrajectory">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_gMs4UXr5Eey3qa1cyTvsgA" name="FrontTrajectory">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_gMs4Unr5Eey3qa1cyTvsgA" name="SteeringAngle">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_gMs4U3r5Eey3qa1cyTvsgA" name="Speed">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_DdTW4GHaEeyJgbvA4oKTXQ" name="Platoon">
@@ -85,23 +97,40 @@
             <body>The data need to be communicated with the interval of 10 ms</body>
           </specification>
         </ownedRule>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_O_7aomHcEeyJgbvA4oKTXQ" name="sensor" type="_thTZoGHZEeyJgbvA4oKTXQ" aggregation="composite" association="_O_6zkGHcEeyJgbvA4oKTXQ">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O_7ao2HcEeyJgbvA4oKTXQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O_7apGHcEeyJgbvA4oKTXQ" value="1"/>
-        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_KVbKY3r2Eey3qa1cyTvsgA" name="platooncontrolunit" type="_eFTq0Hr1Eey3qa1cyTvsgA" aggregation="composite" association="_KVbKYHr2Eey3qa1cyTvsgA"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_PgVeIHr4Eey3qa1cyTvsgA" name="requestPlatoon"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_1qkkkHr4Eey3qa1cyTvsgA" name="leavePlatoon"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_a7qewGHaEeyJgbvA4oKTXQ" name="Lead Truck">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_N4DzomHcEeyJgbvA4oKTXQ" name="sensor" type="_thTZoGHZEeyJgbvA4oKTXQ" aggregation="composite" association="_N4DMkGHcEeyJgbvA4oKTXQ">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N4Dzo2HcEeyJgbvA4oKTXQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N4DzpGHcEeyJgbvA4oKTXQ" value="1"/>
-        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_JIyYIHr2Eey3qa1cyTvsgA" name="platooncontrolunit" type="_eFTq0Hr1Eey3qa1cyTvsgA" aggregation="composite" association="_JIwi8Hr2Eey3qa1cyTvsgA"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_QccWgHr3Eey3qa1cyTvsgA" name="exitPlatoon"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_YTRTYHr4Eey3qa1cyTvsgA" name="acceptPlatoon"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_hjdsYHr4Eey3qa1cyTvsgA" name="initialisePlatoon"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_b_pEQGHaEeyJgbvA4oKTXQ" name="Other vehicle"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_eFTq0Hr1Eey3qa1cyTvsgA" name="PlatoonControlUnit">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_O_7aomHcEeyJgbvA4oKTXQ" name="sensor" type="_thTZoGHZEeyJgbvA4oKTXQ" aggregation="composite" association="_O_6zkGHcEeyJgbvA4oKTXQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_7N0YcHr9Eey3qa1cyTvsgA" name="sendingData">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_8DI24Hr9Eey3qa1cyTvsgA" name="receivedData">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UHirEnr-Eey3qa1cyTvsgA" name="wifi_management" type="_PlQBEHr9Eey3qa1cyTvsgA" aggregation="composite" association="_UHiEAHr-Eey3qa1cyTvsgA"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_zh4AcHr9Eey3qa1cyTvsgA" name="serializeData"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_2P0NYHr9Eey3qa1cyTvsgA" name="deserializeData"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_OsO48Hr-Eey3qa1cyTvsgA" name="dataProcessing"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_PlQBEHr9Eey3qa1cyTvsgA" name="Wifi_Management">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_XF8LUHr9Eey3qa1cyTvsgA" name="RxFrame">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_X2gFkHr9Eey3qa1cyTvsgA" name="TxFrame">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_YbuSgHr9Eey3qa1cyTvsgA" name="send"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_ZCdiYHr9Eey3qa1cyTvsgA" name="receive"/>
+      </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_BCgwcGHPEeyG3scemOlKMA" name="GPS"/>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_D-Z50GHPEeyG3scemOlKMA" name="RADAR"/>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_F32HsGHPEeyG3scemOlKMA" name="HMI"/>
-    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_HmtdQGHPEeyG3scemOlKMA" name="Camera"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_ERCPAGHcEeyJgbvA4oKTXQ" memberEnd="_ERDdIWHcEeyJgbvA4oKTXQ _EREEMmHcEeyJgbvA4oKTXQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ERC2EGHcEeyJgbvA4oKTXQ" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ERDdIGHcEeyJgbvA4oKTXQ" key="nature" value="UML_Nature"/>
@@ -120,17 +149,11 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_G0ecImHcEeyJgbvA4oKTXQ" name="sensor" type="_thTZoGHZEeyJgbvA4oKTXQ" association="_G0cm8GHcEeyJgbvA4oKTXQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_N4DMkGHcEeyJgbvA4oKTXQ" memberEnd="_N4DzomHcEeyJgbvA4oKTXQ _N4DzpWHcEeyJgbvA4oKTXQ">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_N4DzoGHcEeyJgbvA4oKTXQ" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_N4DzoWHcEeyJgbvA4oKTXQ" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_N4DzpWHcEeyJgbvA4oKTXQ" name="lead truck" type="_a7qewGHaEeyJgbvA4oKTXQ" association="_N4DMkGHcEeyJgbvA4oKTXQ"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_O_6zkGHcEeyJgbvA4oKTXQ" memberEnd="_O_7aomHcEeyJgbvA4oKTXQ _O_7apWHcEeyJgbvA4oKTXQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_O_7aoGHcEeyJgbvA4oKTXQ" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O_7aoWHcEeyJgbvA4oKTXQ" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_O_7apWHcEeyJgbvA4oKTXQ" name="following truck" type="_KtwFsGHaEeyJgbvA4oKTXQ" association="_O_6zkGHcEeyJgbvA4oKTXQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_O_7apWHcEeyJgbvA4oKTXQ" name="PlatoonControlUnit" type="_eFTq0Hr1Eey3qa1cyTvsgA" association="_O_6zkGHcEeyJgbvA4oKTXQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_RqZc0GHcEeyJgbvA4oKTXQ" memberEnd="_Rqaq8mHcEeyJgbvA4oKTXQ _Rqb5EGHcEeyJgbvA4oKTXQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rqaq8GHcEeyJgbvA4oKTXQ" source="org.eclipse.papyrus">
@@ -144,17 +167,31 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_SQYew2HcEeyJgbvA4oKTXQ" name="vehicle" type="__LzsgGHZEeyJgbvA4oKTXQ" association="_SQX3sGHcEeyJgbvA4oKTXQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_VUZCUGHcEeyJgbvA4oKTXQ" memberEnd="_VUZpYmHcEeyJgbvA4oKTXQ _VUa3gGHcEeyJgbvA4oKTXQ">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VUZpYGHcEeyJgbvA4oKTXQ" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VUZpYWHcEeyJgbvA4oKTXQ" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_VUa3gGHcEeyJgbvA4oKTXQ" name="vehicle" type="__LzsgGHZEeyJgbvA4oKTXQ" association="_VUZCUGHcEeyJgbvA4oKTXQ"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_XRSz4GHcEeyJgbvA4oKTXQ" memberEnd="_XRSz42HcEeyJgbvA4oKTXQ _XRTa8mHcEeyJgbvA4oKTXQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XRSz4WHcEeyJgbvA4oKTXQ" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XRSz4mHcEeyJgbvA4oKTXQ" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_XRTa8mHcEeyJgbvA4oKTXQ" name="platoon" type="_DdTW4GHaEeyJgbvA4oKTXQ" association="_XRSz4GHcEeyJgbvA4oKTXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIwi8Hr2Eey3qa1cyTvsgA" memberEnd="_JIyYIHr2Eey3qa1cyTvsgA _JIy_MHr2Eey3qa1cyTvsgA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JIxxEHr2Eey3qa1cyTvsgA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JIxxEXr2Eey3qa1cyTvsgA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_JIy_MHr2Eey3qa1cyTvsgA" name="lead truck" type="_a7qewGHaEeyJgbvA4oKTXQ" association="_JIwi8Hr2Eey3qa1cyTvsgA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KVbKYHr2Eey3qa1cyTvsgA" memberEnd="_KVbKY3r2Eey3qa1cyTvsgA _KVbxcnr2Eey3qa1cyTvsgA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KVbKYXr2Eey3qa1cyTvsgA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KVbKYnr2Eey3qa1cyTvsgA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_KVbxcnr2Eey3qa1cyTvsgA" name="following truck" type="_KtwFsGHaEeyJgbvA4oKTXQ" association="_KVbKYHr2Eey3qa1cyTvsgA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Izt0Hr6Eey3qa1cyTvsgA" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_UHiEAHr-Eey3qa1cyTvsgA" memberEnd="_UHirEnr-Eey3qa1cyTvsgA _UHirFXr-Eey3qa1cyTvsgA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UHirEHr-Eey3qa1cyTvsgA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UHirEXr-Eey3qa1cyTvsgA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_UHirFXr-Eey3qa1cyTvsgA" name="platooncontrolunit" type="_eFTq0Hr1Eey3qa1cyTvsgA" association="_UHiEAHr-Eey3qa1cyTvsgA"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_LNtn4GHJEeyG3scemOlKMA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LNtn4WHJEeyG3scemOlKMA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -227,5 +264,6 @@
   <Blocks:Block xmi:id="_DdWaMGHaEeyJgbvA4oKTXQ" base_Class="_DdTW4GHaEeyJgbvA4oKTXQ"/>
   <Blocks:Block xmi:id="_KtzJAGHaEeyJgbvA4oKTXQ" base_Class="_KtwFsGHaEeyJgbvA4oKTXQ"/>
   <Blocks:Block xmi:id="_a7tiEGHaEeyJgbvA4oKTXQ" base_Class="_a7qewGHaEeyJgbvA4oKTXQ"/>
-  <Blocks:Block xmi:id="_b_sHkGHaEeyJgbvA4oKTXQ" base_Class="_b_pEQGHaEeyJgbvA4oKTXQ"/>
+  <Blocks:Block xmi:id="_eFWHEHr1Eey3qa1cyTvsgA" base_Class="_eFTq0Hr1Eey3qa1cyTvsgA"/>
+  <Blocks:Block xmi:id="_PlSdUHr9Eey3qa1cyTvsgA" base_Class="_PlQBEHr9Eey3qa1cyTvsgA"/>
 </xmi:XMI>
