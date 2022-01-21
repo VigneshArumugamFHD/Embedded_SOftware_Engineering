@@ -72,13 +72,13 @@
     <element xmi:type="uml:Class" href="InternalBlockDiagram_Platoon.uml#_1oZdgHr8EeyXjcG-sxsp9A"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1o7pAXr8EeyXjcG-sxsp9A" x="40" y="40" width="1041" height="541"/>
   </children>
-  <children xmi:type="notation:Shape" xmi:id="_1rspIHr8EeyXjcG-sxsp9A" type="StereotypeComment">
-    <styles xmi:type="notation:TitleStyle" xmi:id="_1rspIXr8EeyXjcG-sxsp9A"/>
-    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_1rspI3r8EeyXjcG-sxsp9A" name="BASE_ELEMENT">
+  <children xmi:type="notation:Shape" xmi:id="_uSNg1XsBEeyXjcG-sxsp9A" type="StereotypeComment">
+    <styles xmi:type="notation:TitleStyle" xmi:id="_uSNg1nsBEeyXjcG-sxsp9A"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_uSNg2HsBEeyXjcG-sxsp9A" name="BASE_ELEMENT">
       <eObjectValue xmi:type="uml:Class" href="InternalBlockDiagram_Platoon.uml#_1oZdgHr8EeyXjcG-sxsp9A"/>
     </styles>
     <element xsi:nil="true"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1rspInr8EeyXjcG-sxsp9A" x="240" y="40"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uSNg13sBEeyXjcG-sxsp9A" x="240" y="40"/>
   </children>
   <styles xmi:type="notation:StringValueStyle" xmi:id="_1o07UXr8EeyXjcG-sxsp9A" name="diagram_compatibility_version" stringValue="1.4.0"/>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_1o07Unr8EeyXjcG-sxsp9A"/>
@@ -86,16 +86,6 @@
     <owner xmi:type="uml:Model" href="InternalBlockDiagram_Platoon.uml#_1lCAcHr8EeyXjcG-sxsp9A"/>
   </styles>
   <element xmi:type="uml:Class" href="InternalBlockDiagram_Platoon.uml#_1oZdgHr8EeyXjcG-sxsp9A"/>
-  <edges xmi:type="notation:Connector" xmi:id="_1rspJHr8EeyXjcG-sxsp9A" type="StereotypeCommentLink" source="_1o7pAHr8EeyXjcG-sxsp9A" target="_1rspIHr8EeyXjcG-sxsp9A">
-    <styles xmi:type="notation:FontStyle" xmi:id="_1rspJXr8EeyXjcG-sxsp9A"/>
-    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_1rtQMnr8EeyXjcG-sxsp9A" name="BASE_ELEMENT">
-      <eObjectValue xmi:type="uml:Class" href="InternalBlockDiagram_Platoon.uml#_1oZdgHr8EeyXjcG-sxsp9A"/>
-    </styles>
-    <element xsi:nil="true"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1rspJnr8EeyXjcG-sxsp9A" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1rtQMHr8EeyXjcG-sxsp9A"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1rtQMXr8EeyXjcG-sxsp9A"/>
-  </edges>
   <edges xmi:type="notation:Connector" xmi:id="_27cSYHr_EeyXjcG-sxsp9A" type="Connector_Edge" source="_Nf9IgHr9EeyXjcG-sxsp9A" target="_8YAeMHr-EeyXjcG-sxsp9A">
     <children xmi:type="notation:DecorationNode" xmi:id="_27cSY3r_EeyXjcG-sxsp9A" type="Connector_StereotypeLabel">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_27cSZHr_EeyXjcG-sxsp9A" y="60"/>
@@ -217,5 +207,15 @@
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DCWZ0nsAEeyXjcG-sxsp9A" points="[720, 160, -643984, -643984]$[401, 160, -643984, -643984]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DCoGoHsAEeyXjcG-sxsp9A" id="(0.0,0.24691358024691357)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DCoGoXsAEeyXjcG-sxsp9A" id="(1.0,0.24691358024691357)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_uSOH4HsBEeyXjcG-sxsp9A" type="StereotypeCommentLink" source="_1o7pAHr8EeyXjcG-sxsp9A" target="_uSNg1XsBEeyXjcG-sxsp9A">
+    <styles xmi:type="notation:FontStyle" xmi:id="_uSOH4XsBEeyXjcG-sxsp9A"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_uSOH5XsBEeyXjcG-sxsp9A" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:Class" href="InternalBlockDiagram_Platoon.uml#_1oZdgHr8EeyXjcG-sxsp9A"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_uSOH4nsBEeyXjcG-sxsp9A" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_uSOH43sBEeyXjcG-sxsp9A"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_uSOH5HsBEeyXjcG-sxsp9A"/>
   </edges>
 </notation:Diagram>

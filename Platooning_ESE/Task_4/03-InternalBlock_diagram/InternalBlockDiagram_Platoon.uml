@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks">
   <uml:Model xmi:id="_1lCAcHr8EeyXjcG-sxsp9A" name="InternalBlockDiagram_Platoon">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_1namEHr8EeyXjcG-sxsp9A">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -110,6 +110,4 @@
   <Blocks:Block xmi:id="_f6UVkHr-EeyXjcG-sxsp9A" base_Class="_f6RSQHr-EeyXjcG-sxsp9A"/>
   <Blocks:Block xmi:id="_mbT9YHr-EeyXjcG-sxsp9A" base_Class="_mbSIMHr-EeyXjcG-sxsp9A"/>
   <Blocks:Block xmi:id="_8X6XkHr-EeyXjcG-sxsp9A" base_Class="_8X4iYHr-EeyXjcG-sxsp9A"/>
-  <PortsAndFlows:ItemFlow xmi:id="_mi7y4Hr_EeyXjcG-sxsp9A"/>
-  <PortsAndFlows:ItemFlow xmi:id="_wwE8UHr_EeyXjcG-sxsp9A"/>
 </xmi:XMI>
