@@ -15,10 +15,10 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_Z3kr0HsFEeyGmM0eS_s14w" name="s" type="_aAFHkHsFEeyGmM0eS_s14w" aggregation="shared"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_aK2NIHsFEeyGmM0eS_s14w" name="cu" type="_aUtTwHsFEeyGmM0eS_s14w" aggregation="shared"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_aic00HsFEeyGmM0eS_s14w" name="cu" type="_as5KQHsFEeyGmM0eS_s14w" aggregation="shared"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_bA7gkHsFEeyGmM0eS_s14w" name="cu" type="_bJrz8HsFEeyGmM0eS_s14w" aggregation="shared"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_bYrSMHsFEeyGmM0eS_s14w" name="s" type="_bflygHsFEeyGmM0eS_s14w" aggregation="shared"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_wW5_oHsFEeyGmM0eS_s14w" name="ss" type="_weGMwHsFEeyGmM0eS_s14w"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_zsh3oHsFEeyGmM0eS_s14w" name="cs" type="_z1hbkHsFEeyGmM0eS_s14w"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_5U4XgHsWEeycXe8s8hFKKg" name="cu" type="_5iTIcHsWEeycXe8s8hFKKg" aggregation="shared"/>
       <ownedConnector xmi:type="uml:Connector" xmi:id="_70irIHsGEeyGmM0eS_s14w" name="Connector10">
         <end xmi:type="uml:ConnectorEnd" xmi:id="_70jSMHsGEeyGmM0eS_s14w" role="_wW5_oHsFEeyGmM0eS_s14w"/>
         <end xmi:type="uml:ConnectorEnd" xmi:id="_70jSMXsGEeyGmM0eS_s14w" role="_zsh3oHsFEeyGmM0eS_s14w"/>
@@ -37,9 +37,10 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="_ZTjjUHsGEeyGmM0eS_s14w" client="_ZhXyUHsFEeyGmM0eS_s14w" supplier="_wW5_oHsFEeyGmM0eS_s14w"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_ZvJ6MHsGEeyGmM0eS_s14w" client="_Z3kr0HsFEeyGmM0eS_s14w" supplier="_wW5_oHsFEeyGmM0eS_s14w"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_aaVlMHsGEeyGmM0eS_s14w" client="_bYrSMHsFEeyGmM0eS_s14w" supplier="_wW5_oHsFEeyGmM0eS_s14w"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="_b1vzQHsGEeyGmM0eS_s14w" client="_bA7gkHsFEeyGmM0eS_s14w" supplier="_zsh3oHsFEeyGmM0eS_s14w"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_cSJbYHsGEeyGmM0eS_s14w" client="_aK2NIHsFEeyGmM0eS_s14w" supplier="_zsh3oHsFEeyGmM0eS_s14w"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_eIYkQHsGEeyGmM0eS_s14w" client="_aic00HsFEeyGmM0eS_s14w" supplier="_zsh3oHsFEeyGmM0eS_s14w"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_5iTIcHsWEeycXe8s8hFKKg" name="SteeringControlUnit"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="__9GBoHsWEeycXe8s8hFKKg" client="_5U4XgHsWEeycXe8s8hFKKg" supplier="_zsh3oHsFEeyGmM0eS_s14w"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_75WkkHsEEeyzfpJem0HBsQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_75YZwHsEEeyzfpJem0HBsQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
@@ -109,4 +110,5 @@
   <Blocks:Block xmi:id="_as7mgHsFEeyGmM0eS_s14w" base_Class="_as5KQHsFEeyGmM0eS_s14w"/>
   <Blocks:Block xmi:id="_bJuQMHsFEeyGmM0eS_s14w" base_Class="_bJrz8HsFEeyGmM0eS_s14w"/>
   <Blocks:Block xmi:id="_bfnnsHsFEeyGmM0eS_s14w" base_Class="_bflygHsFEeyGmM0eS_s14w"/>
+  <Blocks:Block xmi:id="_5iVksHsWEeycXe8s8hFKKg" base_Class="_5iTIcHsWEeycXe8s8hFKKg"/>
 </xmi:XMI>

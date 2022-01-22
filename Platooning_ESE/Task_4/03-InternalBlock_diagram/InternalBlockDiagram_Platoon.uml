@@ -13,10 +13,6 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_WvrAYHr9EeyXjcG-sxsp9A" name="su" type="_f6RSQHr-EeyXjcG-sxsp9A" aggregation="shared"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_mOnlMHr-EeyXjcG-sxsp9A" name="ps" type="_mbSIMHr-EeyXjcG-sxsp9A" aggregation="shared"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_8NR04Hr-EeyXjcG-sxsp9A" name="ss" type="_8X4iYHr-EeyXjcG-sxsp9A" aggregation="shared"/>
-      <ownedConnector xmi:type="uml:Connector" xmi:id="_27Wy0Hr_EeyXjcG-sxsp9A" name="Connector6">
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_27XZ4Hr_EeyXjcG-sxsp9A" role="_NUkX4Hr9EeyXjcG-sxsp9A"/>
-        <end xmi:type="uml:ConnectorEnd" xmi:id="_27XZ4Xr_EeyXjcG-sxsp9A" role="_8NR04Hr-EeyXjcG-sxsp9A"/>
-      </ownedConnector>
       <ownedConnector xmi:type="uml:Connector" xmi:id="_5frwwHr_EeyXjcG-sxsp9A" name="Connector7">
         <end xmi:type="uml:ConnectorEnd" xmi:id="_5fsX0Hr_EeyXjcG-sxsp9A" role="_8NR04Hr-EeyXjcG-sxsp9A"/>
         <end xmi:type="uml:ConnectorEnd" xmi:id="_5fsX0Xr_EeyXjcG-sxsp9A" role="_DzRAwHr9EeyXjcG-sxsp9A"/>
@@ -36,6 +32,10 @@
       <ownedConnector xmi:type="uml:Connector" xmi:id="_DCPsIHsAEeyXjcG-sxsp9A" name="Connector11">
         <end xmi:type="uml:ConnectorEnd" xmi:id="_DCPsIXsAEeyXjcG-sxsp9A" role="_8NR04Hr-EeyXjcG-sxsp9A"/>
         <end xmi:type="uml:ConnectorEnd" xmi:id="_DCQTMHsAEeyXjcG-sxsp9A" role="_mOnlMHr-EeyXjcG-sxsp9A"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_XA0G0HsVEeycXe8s8hFKKg" name="Connector11">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_XA0t4HsVEeycXe8s8hFKKg" role="_NUkX4Hr9EeyXjcG-sxsp9A"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_XA0t4XsVEeycXe8s8hFKKg" role="_8NR04Hr-EeyXjcG-sxsp9A"/>
       </ownedConnector>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_ECS7QHr9EeyXjcG-sxsp9A" name="CommunicationSystems"/>
