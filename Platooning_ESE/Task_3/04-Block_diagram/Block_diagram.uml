@@ -42,7 +42,7 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_KDjvkHr8Eey3qa1cyTvsgA" name="DistanceGap">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         </ownedAttribute>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_PIBH8Hr8Eey3qa1cyTvsgA" name="updateGap"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_PIBH8Hr8Eey3qa1cyTvsgA" name="captureGap"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_xMq4IGHZEeyJgbvA4oKTXQ" name="GPS_Management">
         <ownedRule xmi:type="uml:Constraint" xmi:id="_LHblcGHkEeyJgbvA4oKTXQ" name="update">
@@ -58,7 +58,7 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_TCAEwGHjEeyJgbvA4oKTXQ" name="GetGPS"/>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_sbznkHr7Eey3qa1cyTvsgA" name="updateCoordinates"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_sbznkHr7Eey3qa1cyTvsgA" name="captureCoordinates"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="__LzsgGHZEeyJgbvA4oKTXQ" name="Vehicle">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_Rqaq8mHcEeyJgbvA4oKTXQ" name="lead truck" type="_a7qewGHaEeyJgbvA4oKTXQ" aggregation="composite" association="_RqZc0GHcEeyJgbvA4oKTXQ"/>
@@ -119,6 +119,7 @@
         <ownedOperation xmi:type="uml:Operation" xmi:id="_zh4AcHr9Eey3qa1cyTvsgA" name="serializeData"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_2P0NYHr9Eey3qa1cyTvsgA" name="deserializeData"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_OsO48Hr-Eey3qa1cyTvsgA" name="dataProcessing"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_q_IqoHu-EeyeicH69JLb6A" name="updateRxFrame"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_PlQBEHr9Eey3qa1cyTvsgA" name="Wifi_Management">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_XF8LUHr9Eey3qa1cyTvsgA" name="RxFrame">
@@ -127,8 +128,9 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_X2gFkHr9Eey3qa1cyTvsgA" name="TxFrame">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_YbuSgHr9Eey3qa1cyTvsgA" name="send"/>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_ZCdiYHr9Eey3qa1cyTvsgA" name="receive"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_YbuSgHr9Eey3qa1cyTvsgA" name="TxSend"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_ZCdiYHr9Eey3qa1cyTvsgA" name="RxReceive"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_7RyZwHu-EeyeicH69JLb6A" name="updateTxFrame"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_ERCPAGHcEeyJgbvA4oKTXQ" memberEnd="_ERDdIWHcEeyJgbvA4oKTXQ _EREEMmHcEeyJgbvA4oKTXQ">
