@@ -1,0 +1,4 @@
+﻿  test.cpp
+C:\Users\nmtun\source\repos\GTest\GTest\test.cpp(46,36): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\nmtun\source\repos\GTest\GTest\test.cpp(47,37): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  GTest.vcxproj -> C:\Users\nmtun\source\repos\GTest\Debug\GTest.exe
