@@ -26,6 +26,7 @@
           <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_76Q5oXr7Eey3qa1cyTvsgA" name="intruderDetected"/>
         </ownedAttribute>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_8qhR4Hr7Eey3qa1cyTvsgA" name="captureIntruder"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_kte8AHviEeyeicH69JLb6A" name="camera_loop"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_thTZoGHZEeyJgbvA4oKTXQ" name="Sensor">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_ERDdIWHcEeyJgbvA4oKTXQ" name="gps" type="_xMq4IGHZEeyJgbvA4oKTXQ" aggregation="composite" association="_ERCPAGHcEeyJgbvA4oKTXQ"/>
@@ -43,6 +44,7 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         </ownedAttribute>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_PIBH8Hr8Eey3qa1cyTvsgA" name="captureGap"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_hqjWgHviEeyeicH69JLb6A" name="lidar_loop"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_xMq4IGHZEeyJgbvA4oKTXQ" name="GPS_Management">
         <ownedRule xmi:type="uml:Constraint" xmi:id="_LHblcGHkEeyJgbvA4oKTXQ" name="update">
@@ -59,6 +61,7 @@
         </ownedAttribute>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_TCAEwGHjEeyJgbvA4oKTXQ" name="GetGPS"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_sbznkHr7Eey3qa1cyTvsgA" name="captureCoordinates"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_fm0kMHviEeyeicH69JLb6A" name="gps_loop"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="__LzsgGHZEeyJgbvA4oKTXQ" name="Vehicle">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_Rqaq8mHcEeyJgbvA4oKTXQ" name="lead truck" type="_a7qewGHaEeyJgbvA4oKTXQ" aggregation="composite" association="_RqZc0GHcEeyJgbvA4oKTXQ"/>
@@ -120,6 +123,11 @@
         <ownedOperation xmi:type="uml:Operation" xmi:id="_2P0NYHr9Eey3qa1cyTvsgA" name="deserializeData"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_OsO48Hr-Eey3qa1cyTvsgA" name="dataProcessing"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_q_IqoHu-EeyeicH69JLb6A" name="updateRxFrame"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_Q9ZSIHvhEeyeicH69JLb6A" name="updateCoordinates"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_d7F3oHvhEeyeicH69JLb6A" name="updateGap"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_eJW9IHvhEeyeicH69JLb6A" name="updateIntruder"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_HFjN0HviEeyeicH69JLb6A" name="pcu_loop"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_K0IYYHviEeyeicH69JLb6A" name="pcu_setup"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_PlQBEHr9Eey3qa1cyTvsgA" name="Wifi_Management">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_XF8LUHr9Eey3qa1cyTvsgA" name="RxFrame">
@@ -131,6 +139,7 @@
         <ownedOperation xmi:type="uml:Operation" xmi:id="_YbuSgHr9Eey3qa1cyTvsgA" name="TxSend"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_ZCdiYHr9Eey3qa1cyTvsgA" name="RxReceive"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_7RyZwHu-EeyeicH69JLb6A" name="updateTxFrame"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_dcn9gHviEeyeicH69JLb6A" name="wifi_loop"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_ERCPAGHcEeyJgbvA4oKTXQ" memberEnd="_ERDdIWHcEeyJgbvA4oKTXQ _EREEMmHcEeyJgbvA4oKTXQ">
