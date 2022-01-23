@@ -5,8 +5,8 @@ class pcu
 {
     public:
       pcu();
-      void static pcu_init();
-      void static pcu_runnable();
+      void static pcu_setup();
+      void static pcu_loop();
       void serializeData();
       void deserializeData();
       void dataProcesssing();

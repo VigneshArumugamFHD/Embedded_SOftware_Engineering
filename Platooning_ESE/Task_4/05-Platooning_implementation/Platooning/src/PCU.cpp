@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include "pcu.hpp"
+#include "pcu.h"
 
 using namespace std;
 
@@ -14,19 +14,19 @@ pcu::pcu()
 
 }
 
-void static pcu_init()
+void static pcu_setup()
 {
 	leadTruckselected = false;
 	intruder_detected = false;
-	
-	leadTruckselected = getLeadTruckSelected();
+
+	leadTruckselected = false;//getLeadTruckSelected();
 }
 
 
-void static pcu_runnable()
+void static pcu_loop()
 {
-	CurrentVelocity = getVelocity();
-	CurrentSteeringAngle = getSteeringAngle();
+	CurrentVelocity = 100;//getVelocity();
+	CurrentSteeringAngle = 100;//getSteeringAngle();
 
 	if(leadTruckselected == true)
 	{
