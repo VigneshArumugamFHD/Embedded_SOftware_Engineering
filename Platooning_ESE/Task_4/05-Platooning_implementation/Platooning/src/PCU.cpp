@@ -83,14 +83,14 @@ void pcu::dataProcesssing()
 
 	
 
-	// if(intruder_detected == true)
-	// {
-	// 	Serial.println("Intruder detected Decreasing Speed");
-	// }
-	// else
-	// {
-	// 	Serial.println("Maintaining Speed");
-	// }
+	if(intruder_detected == true)
+	{
+		Serial.println("Intruder detected Decreasing Speed");
+	}
+	else
+	{
+		Serial.println("Maintaining Speed");
+	}
 
 	// Serial.println("DataProcessing");
 }

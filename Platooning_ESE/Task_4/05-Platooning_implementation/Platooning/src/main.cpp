@@ -4,6 +4,7 @@
 #include "camera.h"
 #include "pcu.h"
 #include "wifi.h"
+//#include "componentTest.h"
 
 
 void gps_task( void * parameter);
@@ -17,6 +18,7 @@ lidar lidar_obj =  lidar();
 camera camera_obj =  camera();
 pcu pcu_obj =  pcu();
 wifi wifi_obj =  wifi();
+//componentTest cmp = componentTest();
 
 #define LED_BOARD 2
 
@@ -30,6 +32,7 @@ void setup(){
   camera_obj.camera_setup();
   pcu_obj.pcu_setup();
   wifi_obj.wifi_setup();
+
 
   
 
@@ -94,9 +97,11 @@ void gps_task( void * parameter )
 
 void lidar_task( void * parameter )
 {
+   //cmp.testLidar(); 
    for(;;)
    {
        lidar_obj.lidar_loop();
+       
        vTaskDelay(30 / portTICK_PERIOD_MS);
    }
 }
@@ -119,7 +124,7 @@ void pcu_task( void * parameter )
     {
         
         pcu_obj.pcu_loop();
-        vTaskDelay(30 / portTICK_PERIOD_MS);
+        vTaskDelay(500 / portTICK_PERIOD_MS);
     }
 }
 
