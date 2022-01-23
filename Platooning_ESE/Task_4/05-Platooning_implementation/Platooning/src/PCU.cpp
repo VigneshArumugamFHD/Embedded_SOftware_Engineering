@@ -73,7 +73,6 @@ void pcu::dataProcesssing()
 	{
 		Serial.print("Decreasing Speed : Measured_Distance = ");
 		Serial.println(measuredDistanceGap);
-		
 	}
 	else
 	{
@@ -83,22 +82,30 @@ void pcu::dataProcesssing()
 
 	
 
-	// if(intruder_detected == true)
-	// {
-	// 	Serial.println("Intruder detected Decreasing Speed");
-	// }
-	// else
-	// {
-	// 	Serial.println("Maintaining Speed");
-	// }
+	if(intruder_detected == true)
+	{
+		Serial.println("Intruder detected Decreasing Speed");
+	}
+	else
+	{
+		Serial.println("Maintaining Speed");
+	}
 
 	// Serial.println("DataProcessing");
 }
 
 void pcu::updateCoordinates(double latitude, double longitude)
 {
+	 Serial.print("Front truck latitude before updating: ");
+	 Serial.println(front_truck_latitude);
+	 Serial.print("Front truck longitude before updating: ");
+	 Serial.println(front_truck_longitude);
 	 front_truck_latitude = latitude;
 	 front_truck_longitude = longitude;
+	 Serial.print("Front truck latitude after updating: ");
+	 Serial.println(front_truck_latitude);
+	 Serial.print("Front truck longitude after updating: ");
+	 Serial.println(front_truck_longitude);
 }
 
 void pcu::updateGap(int16_t gap)
@@ -122,5 +129,6 @@ void pcu::updateRxFrame(char* frame)
 {
 	char* temp = receivedData;
 	temp = frame;
+	Serial.println("Wifi data is updated");
 }
 
