@@ -87,7 +87,10 @@ void camera_task( void * parameter )
 
 void pcu_task( void * parameter )
 {
-    
+    for(;;)
+    {
+        
+    }
 }
 
 void wifi_task( void * parameter )
