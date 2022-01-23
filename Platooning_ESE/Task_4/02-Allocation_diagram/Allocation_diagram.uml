@@ -44,7 +44,7 @@
         <ownedReception xmi:type="uml:Reception" xmi:id="_S1rUUHvfEeyUFecn66vyBw" name="LIDAR"/>
         <ownedReception xmi:type="uml:Reception" xmi:id="_XxlNoHvfEeyUFecn66vyBw" name="Camera"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_n0OVYHvgEeyUFecn66vyBw" name="allocation" client="_hf-3gHvdEeyUFecn66vyBw" supplier="_fe9lgHveEeyUFecn66vyBw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_n0OVYHvgEeyUFecn66vyBw" name="allocate" client="_hf-3gHvdEeyUFecn66vyBw" supplier="_fe9lgHveEeyUFecn66vyBw"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_p6_0oHvgEeyUFecn66vyBw" name="control unit">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_z__HoHvgEeyUFecn66vyBw" name="rxFrame">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
@@ -57,8 +57,8 @@
         <ownedOperation xmi:type="uml:Operation" xmi:id="__fYtsHvhEeyUFecn66vyBw" name="controlSteeringUnit"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_H8YIIHviEeyUFecn66vyBw" name="dataProcessing"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_1BRTkHviEeyUFecn66vyBw" name="allocation" client="_p6_0oHvgEeyUFecn66vyBw" supplier="_fe9lgHveEeyUFecn66vyBw"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_HNDHgHvjEeyUFecn66vyBw" name="allocation" client="_hf-3gHvdEeyUFecn66vyBw" supplier="_p6_0oHvgEeyUFecn66vyBw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_1BRTkHviEeyUFecn66vyBw" name="allocate" client="_p6_0oHvgEeyUFecn66vyBw" supplier="_fe9lgHveEeyUFecn66vyBw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_HNDHgHvjEeyUFecn66vyBw" name="allocate" client="_hf-3gHvdEeyUFecn66vyBw" supplier="_p6_0oHvgEeyUFecn66vyBw"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_K_8xYHvjEeyUFecn66vyBw" name="wireless communication system">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_Xk_mUHvjEeyUFecn66vyBw" name="rxFrame" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
@@ -69,9 +69,9 @@
         <ownedOperation xmi:type="uml:Operation" xmi:id="_VSJZ8HvjEeyUFecn66vyBw" name="send"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_WE3QUHvjEeyUFecn66vyBw" name="receive"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_1MVeoHvjEeyUFecn66vyBw" name="allocation" client="_hf-3gHvdEeyUFecn66vyBw" supplier="_K_8xYHvjEeyUFecn66vyBw"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_5zYiQHvjEeyUFecn66vyBw" name="allocation" client="_fe9lgHveEeyUFecn66vyBw" supplier="_K_8xYHvjEeyUFecn66vyBw"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_Dbg6IHvkEeyUFecn66vyBw" name="allocation" client="_p6_0oHvgEeyUFecn66vyBw" supplier="_K_8xYHvjEeyUFecn66vyBw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_1MVeoHvjEeyUFecn66vyBw" name="allocate" client="_hf-3gHvdEeyUFecn66vyBw" supplier="_K_8xYHvjEeyUFecn66vyBw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_5zYiQHvjEeyUFecn66vyBw" name="allocate" client="_fe9lgHveEeyUFecn66vyBw" supplier="_K_8xYHvjEeyUFecn66vyBw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_Dbg6IHvkEeyUFecn66vyBw" name="allocate" client="_p6_0oHvgEeyUFecn66vyBw" supplier="_K_8xYHvjEeyUFecn66vyBw"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Fyq4YHvcEeyUFecn66vyBw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Fyq4YXvcEeyUFecn66vyBw" source="http://www.eclipse.org/uml2/2.0.0/UML">
