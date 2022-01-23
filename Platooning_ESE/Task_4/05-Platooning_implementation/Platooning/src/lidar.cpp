@@ -83,10 +83,6 @@ void lidar::captureGap()
     }
   }
   
-  
-      DistanceGap = arr[1];//getDistanceGap();
-  
-
-    
+  DistanceGap = arr[1];    
 }
 

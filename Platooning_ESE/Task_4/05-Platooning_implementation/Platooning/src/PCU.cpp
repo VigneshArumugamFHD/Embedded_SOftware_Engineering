@@ -14,7 +14,6 @@ int16_t measuredDistanceGap;
 
 #define DESIRED_DISTANCE_GAP 100  /*10 meters*/
 
-
 wifi wifiobj = wifi();
 
 pcu::pcu()
@@ -38,8 +37,8 @@ void pcu::pcu_setup()
 
 void pcu::pcu_loop()
 {
-	CurrentVelocity = 100;//getVelocity();
-	CurrentSteeringAngle = 100;//getSteeringAngle();
+	CurrentVelocity = 100;
+	CurrentSteeringAngle = 100;
 
 	if(leadTruckselected == true)
 	{
@@ -73,7 +72,6 @@ void pcu::dataProcesssing()
 	{
 		Serial.print("Decreasing Speed : Measured_Distance = ");
 		Serial.println(measuredDistanceGap);
-		
 	}
 	else
 	{
@@ -91,14 +89,20 @@ void pcu::dataProcesssing()
 	{
 		Serial.println("Maintaining Speed");
 	}
-
-	// Serial.println("DataProcessing");
 }
 
 void pcu::updateCoordinates(double latitude, double longitude)
 {
+	 Serial.print("Front truck latitude before updating: ");
+	 Serial.println(front_truck_latitude);
+	 Serial.print("Front truck longitude before updating: ");
+	 Serial.println(front_truck_longitude);
 	 front_truck_latitude = latitude;
 	 front_truck_longitude = longitude;
+	 Serial.print("Front truck latitude after updating: ");
+	 Serial.println(front_truck_latitude);
+	 Serial.print("Front truck longitude after updating: ");
+	 Serial.println(front_truck_longitude);
 }
 
 void pcu::updateGap(int16_t gap)
@@ -122,5 +126,6 @@ void pcu::updateRxFrame(char* frame)
 {
 	char* temp = receivedData;
 	temp = frame;
+	Serial.println("Received data from the front truck");
 }
 

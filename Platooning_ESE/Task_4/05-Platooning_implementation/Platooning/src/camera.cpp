@@ -87,13 +87,13 @@ void camera::captureIntruder()
     }
   }
   
-  if(arr[0]<150||arr[1]<150||arr[2]<150)
+  if(arr[1]<150)
   {
-      intruderDetected = true;//getIntruderDetected();
+      intruderDetected = true;
   }
   else
   {
-      intruderDetected = false;//getIntruderDetected();
+      intruderDetected = false;
   }
 
 

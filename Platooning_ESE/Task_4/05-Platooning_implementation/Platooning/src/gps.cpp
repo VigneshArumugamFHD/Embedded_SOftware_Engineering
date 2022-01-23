@@ -26,6 +26,6 @@ void gps::gps_loop()
 
 void gps::captureCoordinates()
 {
-    longitude = 100;//getlongitude();
-    latitude = 200;//getlatitude();
+    longitude = 100;
+    latitude = 200;
 }
