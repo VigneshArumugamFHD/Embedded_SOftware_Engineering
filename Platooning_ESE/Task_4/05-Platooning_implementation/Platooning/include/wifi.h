@@ -9,7 +9,7 @@ class wifi
       void wifi_loop();
       void TxSend();
       void RxReceive();
-      void updateTxFrame();
+      void updateTxFrame(char *);
 
 };
 

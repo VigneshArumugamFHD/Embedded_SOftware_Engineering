@@ -11,7 +11,7 @@ class pcu
       void deserializeData();
       void dataProcesssing();
       void updateCoordinates(double latitude, double longitude);
-      void updateGap(int gap);
+      void updateGap(int16_t gap);
       void updateIntruder(bool detected_status);
       void updateRxFrame(char* frame);
 };

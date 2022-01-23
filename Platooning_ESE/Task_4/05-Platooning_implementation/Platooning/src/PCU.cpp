@@ -6,7 +6,14 @@ int CurrentVelocity;
 double CurrentSteeringAngle;
 bool leadTruckselected;
 bool intruder_detected;
-char * sendingData,*receivedData;
+char sendingData[10] = {'v','e','l','a','n','g','p','o','s','\0'};
+char receivedData[10];
+double front_truck_latitude;
+double front_truck_longitude;
+int16_t measuredDistanceGap;
+
+#define DESIRED_DISTANCE_GAP 100  /*10 meters*/
+
 
 wifi wifiobj = wifi();
 
@@ -19,6 +26,11 @@ void pcu::pcu_setup()
 {
 	leadTruckselected = false;
 	intruder_detected = false;
+
+	front_truck_latitude = 0;
+	front_truck_longitude = 0;
+
+	measuredDistanceGap = 0;
 
 	leadTruckselected = false;//getLeadTruckSelected();
 }
@@ -40,40 +52,58 @@ void pcu::pcu_loop()
 		serializeData();
 	}
 
-	wifiobj.updateTxFrame();
+	wifiobj.updateTxFrame(sendingData);
 }
 
 
-void serializeData()
+void pcu::serializeData()
 {
-	sendingData = "leadTruck velocity+steering_angle+location";
-}
-
-void deserializeData()
-{
-
 
 }
 
-void dataProcesssing()
+void pcu::deserializeData()
 {
-	// if(d1-d2 == 10){
-	// 		return 0;
-	// 	}else if(d1-d2 > 10){
-	// 		return 1;
-	// 	}
-	// 	return 2;
+
+
+}
+
+void pcu::dataProcesssing()
+{
+	if(measuredDistanceGap < DESIRED_DISTANCE_GAP)
+	{
+		Serial.print("Decreasing Speed : Measured_Distance = ");
+		Serial.println(measuredDistanceGap);
+		
+	}
+	else
+	{
+		Serial.print("Increasing Speed : Measured_Distance = ");
+		Serial.println(measuredDistanceGap);
+	}
+
+	
+
+	// if(intruder_detected == true)
+	// {
+	// 	Serial.println("Intruder detected Decreasing Speed");
+	// }
+	// else
+	// {
+	// 	Serial.println("Maintaining Speed");
+	// }
+
+	// Serial.println("DataProcessing");
 }
 
 void pcu::updateCoordinates(double latitude, double longitude)
 {
-	// front_truck_latitude = latitude;
-	// front_truck_longitude = longitude;
+	 front_truck_latitude = latitude;
+	 front_truck_longitude = longitude;
 }
 
-void pcu::updateGap(int gap)
+void pcu::updateGap(int16_t gap)
 {
-	// distance_gap = gap;
+	measuredDistanceGap = gap;
 }
 
 void pcu::updateIntruder(bool detected_status)
@@ -90,6 +120,7 @@ void pcu::updateIntruder(bool detected_status)
 
 void pcu::updateRxFrame(char* frame)
 {
-	receivedData = frame;
+	char* temp = receivedData;
+	temp = frame;
 }
 

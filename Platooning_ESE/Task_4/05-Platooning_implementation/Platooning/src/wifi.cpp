@@ -19,17 +19,17 @@ void wifi::wifi_loop()
 
 }
 
-void TxSend()
+void wifi::TxSend()
 {
 
 }
 
-void RxReceive()
+void wifi::RxReceive()
 {
 
 }
 
-void wifi::updateTxFrame()
+void wifi::updateTxFrame(char *frame)
 {
-    // TxFrame = frame;
+    TxFrame = frame;
 }
